@@ -1,0 +1,69 @@
+@use "./../abstracts/style" as *;
+
+#Services{
+    overflow: hidden;
+    .box{
+        .item{
+        transition-duration: .5s;
+        padding: 20px;
+        border-radius: 15px;
+        width: 75%;
+        margin: auto;
+        &:hover{
+            background-color: white;
+            box-shadow: 0 20px 50px #00000080;
+            transform: translateY(-10px);
+        }
+            
+        }
+        img{
+            width: 60px;
+        }
+        a{
+            cursor: pointer;
+        }
+        
+    }
+}
+#video{
+  background-image: url("../images/video-bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .title{
+    position: relative;
+    z-index: 2;
+    &::after{
+        background-color: white;
+    }
+  }
+  .box i{
+    color: white;
+    font-size: 50px;
+    z-index: 2;
+    position: relative;
+    transition-duration: .5s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.2);
+    }
+  }
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+    background: radial-gradient(#68b703, #305d00);
+  }
+}

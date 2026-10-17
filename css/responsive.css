@@ -1,0 +1,87 @@
+@media (max-width: 1300px) {
+    .navbar .navbar-nav {
+        background-color: white;
+        text-align: center;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin: 20px 0px;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-brand {
+  width: 25%;
+}
+.navbar.scrolled .navbar-brand {
+  width: 20%;
+}
+#Home .part1{
+    margin-top: 50px;
+}
+#Home .part1 h1 {
+  font-size: 40px;
+}
+#Home .part2{
+    width: 300px;
+    margin: auto;
+}
+#AboutUs .row{
+    width:90%;
+    margin: auto;
+}
+#AboutUs .col-lg-5 .item{
+    margin-bottom: 20px;
+}
+#Services .box .item {
+    width: 90%;
+    margin: auto;
+}
+#WhyUs .item{
+    width: 280px;
+    margin: auto;
+}
+#Language .part1 .title h2{
+    font-size: 20px;
+}
+#Language .part2 h2{
+    font-size: 20px;
+}
+#ContactUs .part1 a{
+    font-size: 12px;
+    width: 100px;
+}
+.popup[data-popup-name="video"] .box iframe{
+    width: 95%;
+    height: 250px;
+}
+.popup[ data-popup-name="language"] .box{
+    width: 50%;
+}
+}
+
+@media (min-width: 371px) and (max-width: 1300px) {
+    #Home .part1{
+    margin-top: 60px;
+}
+#Language .part1 .title h2{
+    font-size: 30px;
+}
+}
+
+@media (min-width: 577px) and (max-width: 1300px) {}
+
+@media (min-width: 769px) and (max-width: 1300px) {}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .navbar .navbar-brand {
+  width: 12%;
+}
+.navbar.scrolled .navbar-brand {
+  width: 10%;
+}
+.navbar .navbar-nav{
+    background-color: transparent;
+}
+}
+
+@media (min-width: 1181px) and (max-width: 1300px) {}
