@@ -48,7 +48,7 @@
 }
 #ContactUs .part1 a{
     font-size: 12px;
-    width: 100px;
+    padding: 10px 15px;
 }
 .popup[data-popup-name="video"] .box iframe{
     width: 95%;
