@@ -1,0 +1,34 @@
+@use "./../abstracts/style" as *;
+
+.loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ada996;
+    background: -webkit-linear-gradient(to right,#eaeaea,#dbdbdb,#f2f2f2,#ada996);
+    background: linear-gradient(to right,#eaeaea,#dbdbdb,#f2f2f2,#ada996);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    transition-duration: 1s;
+}
+.loadingScreen.hide{
+  opacity: 0;
+}
+.loadingScreen .box {
+    width: 200px;
+    height: 200px;
+}
+.loadingScreen .box img {
+    animation-name:  animate4;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    display: block;
+    width: 100%;
+}
