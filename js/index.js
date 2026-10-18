@@ -18,24 +18,24 @@ navScroll();
     
 
 
-// function setActive() {
-//   links.forEach(function (link) {
-//     const section = document.querySelector(link.getAttribute("href"));
-//     if (!section) return;
-//     const top = section.offsetTop - navbar.offsetHeight;
-//     const bottom = top + section.offsetHeight;
+function setActive() {
+  links.forEach(function (link) {
+    const section = document.querySelector(link.getAttribute("href"));
+    if (!section) return;
+    const top = section.offsetTop - navbar.offsetHeight;
+    const bottom = top + section.offsetHeight;
 
-//     if (window.scrollY >= top && window.scrollY < bottom) {
-//       links.forEach(function (l) {
-//         l.classList.remove("active");
-//       });
-//       link.classList.add("active");
-//     }
-//   });
-// }
+    if (window.scrollY >= top && window.scrollY < bottom) {
+      links.forEach(function (l) {
+        l.classList.remove("active");
+      });
+      link.classList.add("active");
+    }
+  });
+}
 
-// window.addEventListener("scroll", setActive);
-// setActive();
+window.addEventListener("scroll", setActive);
+setActive();
 
 
 async function getServices() {
