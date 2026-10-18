@@ -126,17 +126,15 @@ section:hover .title::after {
   font-size: 13px;
 }
 
-.popup[data-popup-name=language] {
-  overflow: hidden;
-}
 .popup[data-popup-name=language] .box {
   margin: 0px;
   position: absolute;
   top: 0;
   right: 0;
   width: 35%;
+  height: 100%;
+  overflow-y: auto;
   border-radius: 10px 0px 0px 10px;
-  overflow: hidden;
 }
 .popup[data-popup-name=language] .box .content:nth-of-type(odd) h5 {
   color: #719F3D;
