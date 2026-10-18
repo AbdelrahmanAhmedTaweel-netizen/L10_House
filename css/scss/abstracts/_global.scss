@@ -141,15 +141,17 @@ section{
 }
 .popup{
     &[ data-popup-name="language"]{
-        overflow: hidden;
+        
         .box{
             margin:0px;
             position: absolute;
             top: 0;
             right: 0;
             width: 35%;
+            height: 100%;
+            overflow-y: auto;
             border-radius:10px 0px 0px 10px;
-            overflow: hidden;
+            
             .content:nth-of-type(odd){
                 h5{
                     color: $firstColor;
